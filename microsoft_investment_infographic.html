@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft (MSFT) Investment Analysis Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        msft: {
+                            blue: '#00A4EF',
+                            green: '#7FBA00',
+                            red: '#F25022',
+                            yellow: '#FFB900',
+                        },
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                            950: '#020617',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #00A4EF, #00d2ff);
+        }
+
+        /* Loading animation for the AI generator */
+        .loading-dots::after {
+            content: '';
+            animation: dots 1.5s steps(5, end) infinite;
+        }
+        @keyframes dots {
+            0%, 20% { content: ''; }
+            40% { content: '.'; }
+            60% { content: '..'; }
+            80%, 100% { content: '...'; }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen p-4 md:p-8 antialiased selection:bg-msft-blue selection:text-white relative overflow-x-hidden">
+
+    <!-- Background decorative elements -->
+    <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-msft-blue/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
+
+    <div class="max-w-6xl mx-auto bg-slate-900/50 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-800/80 overflow-hidden flex flex-col relative z-10">
+        
+        <!-- Header -->
+        <header class="relative px-8 py-14 text-center bg-gradient-to-b from-slate-850 to-transparent border-b border-slate-800/50 overflow-hidden flex-shrink-0">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03]"></div>
+            
+            <div class="relative z-10 flex flex-col items-center">
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="bg-msft-blue/10 border border-msft-blue/30 px-3 py-1 rounded-full text-xs font-bold tracking-widest text-msft-blue uppercase shadow-[0_0_15px_rgba(0,164,239,0.3)]">
+                        Q3 FY2026 Review
+                    </span>
+                    <span class="bg-slate-800 border border-slate-700 px-3 py-1 rounded-full text-xs font-bold tracking-widest text-slate-300 uppercase">
+                        May 2026 Analysis
+                    </span>
+                </div>
+                <div class="flex items-center gap-4 mb-4">
+                    <!-- Microsoft Logo Representation -->
+                    <div class="grid grid-cols-2 gap-1 w-8 h-8">
+                        <div class="bg-msft-red rounded-sm"></div>
+                        <div class="bg-msft-green rounded-sm"></div>
+                        <div class="bg-msft-blue rounded-sm"></div>
+                        <div class="bg-msft-yellow rounded-sm"></div>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+                        Microsoft <span class="text-slate-500 font-medium">(MSFT)</span>
+                    </h1>
+                </div>
+                <p class="text-lg md:text-xl text-slate-400 font-medium max-w-3xl mx-auto mt-2">
+                    Evaluating the $190B AI Infrastructure Bet: Generative Monetization vs. Margin Friction.
+                </p>
+            </div>
+        </header>
+
+        <main class="p-6 md:p-10 space-y-12 flex-grow">
+            
+            <!-- Section 1: Earnings Snapshot -->
+            <section>
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-xl bg-msft-blue/20 border border-msft-blue/30 flex items-center justify-center mr-4 shadow-inner">
+                            <i class="fa-solid fa-chart-line text-msft-blue text-lg"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight">Earnings & Guidance Scorecard</h2>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Revenue Card -->
+                    <div class="glass-panel rounded-2xl p-6 relative overflow-hidden group hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1">
+                        <div class="absolute top-4 right-4 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded border border-emerald-500/20">BEAT</div>
+                        <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Q3 Revenue</p>
+                        <h3 class="text-3xl font-bold text-white mb-1">$82.9B</h3>
+                        <p class="text-emerald-400 font-medium text-sm flex items-center"><i class="fa-solid fa-arrow-trend-up mr-1.5 text-xs"></i> +18% YoY</p>
+                        <div class="mt-4 pt-3 border-t border-slate-700/50 text-xs text-slate-500">vs $81.3B Consensus</div>
+                    </div>
+
+                    <!-- EPS Card -->
+                    <div class="glass-panel rounded-2xl p-6 relative overflow-hidden group hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1">
+                        <div class="absolute top-4 right-4 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded border border-emerald-500/20">BEAT</div>
+                        <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Diluted EPS</p>
+                        <h3 class="text-3xl font-bold text-white mb-1">$4.27</h3>
+                        <p class="text-emerald-400 font-medium text-sm flex items-center"><i class="fa-solid fa-arrow-trend-up mr-1.5 text-xs"></i> +21% YoY</p>
+                        <div class="mt-4 pt-3 border-t border-slate-700/50 text-xs text-slate-500">vs $4.05 Consensus</div>
+                    </div>
+
+                    <!-- Azure Card -->
+                    <div class="glass-panel rounded-2xl p-6 relative overflow-hidden group hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,164,239,0.15)]">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-msft-blue/10 rounded-bl-full -z-10"></div>
+                        <div class="absolute top-4 right-4 bg-emerald-500/20 text-emerald-400 text-[10px] font-bold px-2 py-1 rounded border border-emerald-500/20">BEAT</div>
+                        <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">Azure Growth (CC)</p>
+                        <h3 class="text-3xl font-bold text-white mb-1">+40%</h3>
+                        <p class="text-msft-blue font-medium text-sm flex items-center"><i class="fa-solid fa-cloud mr-1.5 text-xs"></i> Re-acceleration</p>
+                        <div class="mt-4 pt-3 border-t border-slate-700/50 text-xs text-slate-500">vs 37-38% Guidance</div>
+                    </div>
+
+                    <!-- AI ARR Card -->
+                    <div class="glass-panel rounded-2xl p-6 relative overflow-hidden group hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(168,85,247,0.15)]">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-bl-full -z-10"></div>
+                        <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-2">AI Annual Run Rate</p>
+                        <h3 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-msft-blue mb-1">&gt;$37B</h3>
+                        <p class="text-purple-400 font-medium text-sm flex items-center"><i class="fa-solid fa-microchip mr-1.5 text-xs"></i> +123% YoY</p>
+                        <div class="mt-4 pt-3 border-t border-slate-700/50 text-xs text-slate-500">Massive monetization scaling</div>
+                    </div>
+                </div>
+
+                <!-- CapEx Alert Banner -->
+                <div class="mt-6 bg-gradient-to-r from-amber-500/10 via-slate-900 to-slate-900 border border-amber-500/30 rounded-xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-amber-500/20 text-amber-400 w-10 h-10 rounded-full flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-amber-400 font-bold text-sm">Strategic Pivot: Accelerated CapEx Intensity</h4>
+                            <p class="text-slate-300 text-sm mt-0.5">Q4 CapEx guided &gt;$40B. Full CY2026 infrastructure plan set at <strong class="text-white">$190 Billion</strong>. Cloud margins expected to compress to 64%.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Investment Framework -->
+            <section>
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mr-4 shadow-inner">
+                        <i class="fa-solid fa-layer-group text-purple-400 text-lg"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white tracking-tight">Fundamental Framework</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Moat -->
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col h-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-blue-500/20 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-chess-rook text-blue-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white">Wide Economic Moat</h4>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed flex-grow">Unparalleled enterprise integration creates immense <strong>switching costs</strong>. The interconnected ecosystem of Office 365, Azure, Windows, and LinkedIn reinforces strong network effects and defends market share.</p>
+                    </div>
+
+                    <!-- FCF Conversion -->
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col h-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-emerald-500/20 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-money-bill-transfer text-emerald-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white">FCF Conversion Friction</h4>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed flex-grow">While software typically converts 80-100% of EBITDA to Free Cash Flow, Microsoft faces temporary <strong>FCF conversion compression</strong> due to the historic $190B hardware and data center buildout.</p>
+                    </div>
+
+                    <!-- TAM Growth -->
+                    <div class="glass-panel p-6 rounded-2xl flex flex-col h-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-cyan-500/20 p-2.5 rounded-lg">
+                                <i class="fa-solid fa-earth-americas text-cyan-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white">TAM Expansion</h4>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed flex-grow">Positioned to capture maximum value from secular mega-trends. Global Cloud Computing TAM is projected to reach <strong>$1.94 Trillion by 2030</strong>, supercharged by Agentic AI enterprise adoption.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Bull vs Bear -->
+            <section>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Bull Case -->
+                    <div class="bg-gradient-to-br from-emerald-900/30 to-slate-900 rounded-2xl p-1 border border-emerald-500/30 shadow-lg relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-stripes.png')] opacity-[0.02]"></div>
+                        <div class="bg-slate-950/80 backdrop-blur h-full w-full rounded-[14px] p-8 flex flex-col relative z-10">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-2xl font-bold text-emerald-400 flex items-center"><i class="fa-solid fa-bullhorn mr-3"></i> The Bull Thesis</h3>
+                                <div class="bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">Generative Monetization</div>
+                            </div>
+                            <ul class="space-y-4 mb-8 text-slate-300 text-sm flex-grow">
+                                <li class="flex items-start">
+                                    <div class="bg-emerald-500/20 rounded-full p-1 mr-3 shrink-0 mt-0.5"><i class="fa-solid fa-check text-emerald-400 text-[10px] w-3 h-3 flex items-center justify-center"></i></div>
+                                    <span><strong>Copilot Triumph:</strong> AI integration drives massive ARPU expansion across the 365 commercial base.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-emerald-500/20 rounded-full p-1 mr-3 shrink-0 mt-0.5"><i class="fa-solid fa-check text-emerald-400 text-[10px] w-3 h-3 flex items-center justify-center"></i></div>
+                                    <span><strong>Azure Acceleration:</strong> Azure sustains &gt;35% growth rate as enterprises transition fully to AI workloads.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-emerald-500/20 rounded-full p-1 mr-3 shrink-0 mt-0.5"><i class="fa-solid fa-check text-emerald-400 text-[10px] w-3 h-3 flex items-center justify-center"></i></div>
+                                    <span><strong>Margin Recovery:</strong> By 2027, CapEx normalizes, depreciation is absorbed, and gross margins rebound to historical norms.</span>
+                                </li>
+                            </ul>
+                            <div class="pt-5 border-t border-emerald-500/20">
+                                <p class="text-emerald-500/70 text-xs uppercase font-bold tracking-widest mb-1">Implied DCF Fair Value</p>
+                                <p class="text-4xl font-black text-white tracking-tight">$550 <span class="text-emerald-400/50 font-normal text-2xl">-</span> $580</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bear Case -->
+                    <div class="bg-gradient-to-br from-rose-900/30 to-slate-900 rounded-2xl p-1 border border-rose-500/30 shadow-lg relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-stripes.png')] opacity-[0.02]"></div>
+                        <div class="bg-slate-950/80 backdrop-blur h-full w-full rounded-[14px] p-8 flex flex-col relative z-10">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-2xl font-bold text-rose-400 flex items-center"><i class="fa-solid fa-bear mr-3"></i> The Bear Thesis</h3>
+                                <div class="bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold px-3 py-1.5 rounded-full">Overcommitment Friction</div>
+                            </div>
+                            <ul class="space-y-4 mb-8 text-slate-300 text-sm flex-grow">
+                                <li class="flex items-start">
+                                    <div class="bg-rose-500/20 rounded-full p-1 mr-3 shrink-0 mt-0.5"><i class="fa-solid fa-xmark text-rose-400 text-[10px] w-3 h-3 flex items-center justify-center"></i></div>
+                                    <span><strong>CapEx Bubble:</strong> The $190B infrastructure buildout far outpaces near-term enterprise software demand.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-rose-500/20 rounded-full p-1 mr-3 shrink-0 mt-0.5"><i class="fa-solid fa-xmark text-rose-400 text-[10px] w-3 h-3 flex items-center justify-center"></i></div>
+                                    <span><strong>Margin Dilution:</strong> Depreciation costs from unused server capacity crush operating income and FCF conversion.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="bg-rose-500/20 rounded-full p-1 mr-3 shrink-0 mt-0.5"><i class="fa-solid fa-xmark text-rose-400 text-[10px] w-3 h-3 flex items-center justify-center"></i></div>
+                                    <span><strong>Growth Stall:</strong> Copilot monetization plateaus, and Azure growth decelerates to the low 20% range.</span>
+                                </li>
+                            </ul>
+                            <div class="pt-5 border-t border-rose-500/20">
+                                <p class="text-rose-500/70 text-xs uppercase font-bold tracking-widest mb-1">Implied DCF Fair Value</p>
+                                <p class="text-4xl font-black text-white tracking-tight">$380 <span class="text-rose-400/50 font-normal text-2xl">-</span> $410</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Valuation Spectrum -->
+            <section class="glass-panel rounded-2xl p-6 md:p-10 border border-slate-700/50">
+                <h2 class="text-xl font-bold text-white mb-2 text-center uppercase tracking-widest">Valuation Spectrum & Target Prices</h2>
+                <p class="text-slate-400 text-xs text-center mb-12 max-w-xl mx-auto">Visualizing the spread between structural DCF models and Wall Street analyst consensus.</p>
+                
+                <!-- Valuation Gauge (Scale: $350 to $600. Range = 250) -->
+                <!-- Bear DCF (Mid $395): ~18% -->
+                <!-- Current Price ($422.5): ~29% -->
+                <!-- WS Bear ($502): ~61% -->
+                <!-- Bull DCF (Mid $565): ~86% -->
+                <!-- WS Consensus ($570): ~88% -->
+
+                <div class="relative max-w-4xl mx-auto py-12">
+                    <!-- The Track -->
+                    <div class="h-4 bg-slate-800/80 rounded-full relative w-full border border-slate-700 shadow-inner">
+                        <!-- Color Gradient inside track -->
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-r from-rose-500 via-slate-600 to-emerald-500 opacity-40"></div>
+                        
+                        <!-- Marker: Bear Case DCF (~$395) -> 18% -->
+                        <div class="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style="left: 18%;">
+                            <div class="w-4 h-4 bg-rose-500 rounded-full border-2 border-slate-900 shadow-[0_0_12px_rgba(244,63,94,0.8)] z-10"></div>
+                            <div class="absolute top-6 text-center w-32">
+                                <p class="text-[10px] font-bold text-rose-400 tracking-wider">BEAR DCF</p>
+                                <p class="text-sm font-semibold text-white">$395</p>
+                            </div>
+                        </div>
+
+                        <!-- Marker: Current Price (~$422.50) -> 29% -->
+                        <div class="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style="left: 29%;">
+                            <div class="w-6 h-6 bg-white rounded-full border-4 border-msft-blue shadow-[0_0_20px_rgba(0,164,239,0.8)] z-30 animate-pulse-slow"></div>
+                            <div class="absolute bottom-6 text-center w-32">
+                                <p class="text-[10px] font-bold text-msft-blue tracking-wider">CURRENT PRICE</p>
+                                <p class="text-lg font-black text-white">$422.50</p>
+                            </div>
+                        </div>
+
+                        <!-- Marker: WS Bear (~$502) -> 61% -->
+                        <div class="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style="left: 61%;">
+                            <div class="w-3 h-3 bg-amber-500 rounded-full border border-slate-900 shadow-[0_0_8px_rgba(245,158,11,0.8)] z-10"></div>
+                            <div class="absolute top-6 text-center w-32 hidden md:block">
+                                <p class="text-[10px] font-bold text-amber-400 tracking-wider">WS BEAR</p>
+                                <p class="text-sm font-semibold text-white">$502</p>
+                            </div>
+                        </div>
+
+                        <!-- Marker: Bull DCF (~$565) -> 86% -->
+                        <div class="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style="left: 86%;">
+                            <div class="w-4 h-4 bg-emerald-500 rounded-full border-2 border-slate-900 shadow-[0_0_12px_rgba(16,185,129,0.8)] z-20"></div>
+                            <div class="absolute top-6 text-center w-32 hidden md:block">
+                                <p class="text-[10px] font-bold text-emerald-400 tracking-wider">BULL DCF</p>
+                                <p class="text-sm font-semibold text-white">$565</p>
+                            </div>
+                            <!-- Mobile alternate placement -->
+                            <div class="absolute top-6 text-center w-32 md:hidden">
+                                <p class="text-[10px] font-bold text-emerald-400 tracking-wider">BULL/CONS</p>
+                                <p class="text-sm font-semibold text-white">$565+</p>
+                            </div>
+                        </div>
+
+                        <!-- Marker: WS Consensus (~$570) -> 88% -->
+                        <div class="absolute top-1/2 -translate-y-1/2 flex flex-col items-center" style="left: 88%;">
+                            <div class="w-5 h-5 bg-msft-green rounded-full border-2 border-slate-900 shadow-[0_0_15px_rgba(127,186,0,0.8)] z-10"></div>
+                            <div class="absolute bottom-6 text-center w-32 hidden md:block">
+                                <p class="text-[10px] font-bold text-msft-green tracking-wider">CONSENSUS</p>
+                                <p class="text-base font-bold text-white">$570</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scale Labels -->
+                    <div class="flex justify-between text-[10px] text-slate-500 mt-12 px-2 font-mono">
+                        <span>$350</span>
+                        <span>$400</span>
+                        <span>$450</span>
+                        <span>$500</span>
+                        <span>$550</span>
+                        <span>$600</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Interactive AI Insights -->
+            <section class="bg-gradient-to-r from-slate-900 to-slate-850 rounded-2xl p-6 md:p-8 border border-slate-700 shadow-xl relative overflow-hidden">
+                <!-- Decorative AI background logo -->
+                <div class="absolute -bottom-10 -right-10 opacity-5 pointer-events-none text-9xl">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center mb-6">
+                        <div class="relative w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mr-4 p-[1px]">
+                            <div class="w-full h-full bg-slate-900 rounded-[11px] flex items-center justify-center">
+                                <i class="fa-solid fa-wand-magic-sparkles text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-white">Ask the AI Analyst</h2>
+                            <p class="text-slate-400 text-xs mt-1">Generate a custom perspective on MSFT's $190B infrastructure strategy.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                        <div class="flex-grow">
+                            <label class="block text-xs font-medium text-slate-400 mb-1.5 uppercase tracking-wide">Select Analyst Persona</label>
+                            <select id="ai-persona" class="bg-slate-950 border border-slate-700 text-white text-sm rounded-lg focus:ring-msft-blue focus:border-msft-blue block w-full p-3 transition-colors appearance-none">
+                                <option value="bullish_growth">Aggressive Cloud & AI Growth Analyst</option>
+                                <option value="value_skeptic">Value Investor (Focus on Margin/CapEx Friction)</option>
+                                <option value="tech_strategist">Enterprise Technology Strategist</option>
+                            </select>
+                        </div>
+                        <div class="flex items-end">
+                            <button id="generate-btn" class="w-full md:w-auto bg-gradient-to-r from-msft-blue to-blue-600 hover:from-blue-500 hover:to-blue-400 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center whitespace-nowrap shadow-[0_0_20px_rgba(0,164,239,0.3)]">
+                                <i class="fa-solid fa-bolt mr-2 text-yellow-300"></i> Generate Synthesis
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Output Area -->
+                    <div id="ai-output-container" class="bg-slate-950/80 rounded-xl p-6 border border-slate-800 min-h-[140px] hidden relative backdrop-blur-sm">
+                        <!-- Top corner accent -->
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-msft-blue via-purple-500 to-msft-blue rounded-t-xl opacity-50"></div>
+                        
+                        <div id="loading-indicator" class="text-msft-blue text-sm hidden font-mono flex items-center gap-3">
+                            <i class="fa-solid fa-circle-notch fa-spin text-lg"></i>
+                            Processing structural data and generating insights<span class="loading-dots"></span>
+                        </div>
+                        
+                        <div id="ai-result" class="text-slate-200 text-sm leading-relaxed whitespace-pre-wrap font-medium"></div>
+                        
+                        <div id="ai-error" class="text-rose-400 text-sm hidden flex items-start bg-rose-500/10 border border-rose-500/20 p-4 rounded-lg">
+                            <i class="fa-solid fa-circle-exclamation mt-1 mr-3 text-lg"></i>
+                            <div>
+                                <strong class="block mb-1">Synthesis Failed</strong>
+                                <span id="ai-error-text">An error occurred while connecting to the intelligence engine. Please try again.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-950/80 p-6 border-t border-slate-800/80 text-center text-xs text-slate-500 flex-shrink-0 backdrop-blur-md">
+            <p class="mb-2 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-shield-halved text-slate-600"></i> 
+                Designed for educational and informational purposes. Not financial advice.
+            </p>
+            <p>Analysis evaluates MSFT based on DCF modeling, FCF conversion friction, and aggressive CapEx tracking.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateBtn = document.getElementById('generate-btn');
+            const personaSelect = document.getElementById('ai-persona');
+            const outputContainer = document.getElementById('ai-output-container');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            const resultDiv = document.getElementById('ai-result');
+            const errorDiv = document.getElementById('ai-error');
+            const errorText = document.getElementById('ai-error-text');
+
+            // Data Context for the LLM
+            const infographicData = `
+                Company: Microsoft (MSFT)
+                Latest Quarter: Q3 FY2026
+                Revenue: $82.9B (+18% YoY, Beat est $81.3B)
+                Adj EPS: $4.27 (+21% YoY, Beat est $4.05)
+                Azure Growth: +40% (Constant Currency, Beat guidance of 37-38%)
+                AI Annual Run Rate: >$37B (+123% YoY)
+                Q4 Revenue Guidance: $86.7B - $87.8B
+                CapEx: Q3 was $31.9B. Q4 guided >$40B. Full CY2026 plan is $190B.
+                Margins: Cloud gross margin expected to drop to 64% in Q4 due to depreciation and AI infrastructure scaling.
+                Current Price: ~$422.50
+                Consensus Target: ~$570
+                Bull Case DCF: $550-$580 (Assumes Copilot monetization succeeds, Azure maintains >35% growth, margins recover).
+                Bear Case DCF: $380-$410 (Assumes $190B CapEx outpaces demand, massive depreciation crushes FCF, growth slows).
+            `;
+
+            generateBtn.addEventListener('click', async () => {
+                const persona = personaSelect.value;
+                
+                let systemInstruction = "";
+                let userPrompt = "";
+
+                if (persona === 'bullish_growth') {
+                    systemInstruction = "You are an aggressive tech analyst focused on cloud and generative AI hyper-growth. You prioritize Total Addressable Market (TAM) expansion over near-term margin compression.";
+                    userPrompt = "Based on the Microsoft data provided, write a punchy, 3-sentence summary arguing why the $190B CapEx plan is a genius strategic moat-building exercise, and why the stock is a 'strong buy' towards the $580 Bull DCF target.";
+                } else if (persona === 'value_skeptic') {
+                    systemInstruction = "You are a conservative value investor strictly focused on Free Cash Flow conversion, Return on Invested Capital (ROIC), and margin of safety. You hate excessive capital expenditures.";
+                    userPrompt = "Based on the Microsoft data provided, write a cautious, 3-sentence summary highlighting the severe risks of the $190B CapEx plan. Emphasize the upcoming margin compression to 64% and the risk of the stock dropping to the $380 Bear DCF if AI monetization lags depreciation costs.";
+                } else {
+                    systemInstruction = "You are a balanced, objective Wall Street enterprise technology strategist.";
+                    userPrompt = "Based on the Microsoft data provided, write a balanced 3-sentence summary that weighs the incredible +40% Azure re-acceleration and $37B AI run rate against the heavy friction of the $190B infrastructure buildout and margin drops.";
+                }
+
+                // UI Loading State
+                outputContainer.classList.remove('hidden');
+                resultDiv.classList.add('hidden');
+                errorDiv.classList.add('hidden');
+                loadingIndicator.classList.remove('hidden');
+                loadingIndicator.classList.add('flex');
+                generateBtn.disabled = true;
+                generateBtn.classList.add('opacity-50', 'cursor-wait');
+                generateBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> Synthesizing...';
+
+                try {
+                    // API Call Configuration (Empty key for Canvas environment to inject)
+                    const apiKey = ""; 
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+                    
+                    const payload = {
+                        contents: [{ 
+                            parts: [{ text: `Data Context:\n${infographicData}\n\nTask:\n${userPrompt}` }] 
+                        }],
+                        systemInstruction: {
+                            parts: [{ text: systemInstruction }]
+                        }
+                    };
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API returned status ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    
+                    if (data.candidates && data.candidates.length > 0 && data.candidates[0].content) {
+                        const generatedText = data.candidates[0].content.parts[0].text;
+                        resultDiv.innerHTML = `<span class="text-msft-blue font-bold mr-2">Analyst Take:</span>${generatedText.trim()}`;
+                        resultDiv.classList.remove('hidden');
+                    } else {
+                        throw new Error("Unexpected API response structure.");
+                    }
+
+                } catch (error) {
+                    console.error("Gemini API Error:", error);
+                    // Fallback simulated response if API fails (e.g. if run locally without proxy)
+                    const fallbackText = getFallbackResponse(persona);
+                    resultDiv.innerHTML = `<span class="text-amber-400 font-bold mr-2">[Simulated Offline Mode]</span>${fallbackText}`;
+                    resultDiv.classList.remove('hidden');
+                } finally {
+                    // Reset UI
+                    loadingIndicator.classList.add('hidden');
+                    loadingIndicator.classList.remove('flex');
+                    generateBtn.disabled = false;
+                    generateBtn.classList.remove('opacity-50', 'cursor-wait');
+                    generateBtn.innerHTML = '<i class="fa-solid fa-bolt mr-2 text-yellow-300"></i> Generate Synthesis';
+                }
+            });
+
+            // Fallback content generator
+            function getFallbackResponse(persona) {
+                if(persona === 'bullish_growth') return "Microsoft's $190 billion CapEx commitment is an impenetrable moat-building exercise that guarantees long-term dominance in the $1.94 trillion cloud TAM. With Azure re-accelerating to 40% growth and AI ARR already crossing $37 billion, they are successfully converting infrastructure into explosive generative revenue. Investors should aggressively target the $580 Bull DCF, as near-term margin compression is a cheap price to pay for establishing a generational AI monopoly.";
+                if(persona === 'value_skeptic') return "Investors must remain highly cautious as Microsoft's staggering $190 billion CapEx plan threatens to severely compress Free Cash Flow conversion in the near term. With Cloud gross margins already guided down to 64%, the depreciation costs from this massive infrastructure buildout will act as a heavy anchor on operating income. If Copilot monetization fails to outpace these mounting fixed costs, the stock is at severe risk of mean-reverting toward our $380 Bear Case DCF valuation.";
+                return "Microsoft is executing an impressive high-wire act, balancing a massive +40% Azure re-acceleration and a $37 billion AI run rate against unprecedented infrastructure costs. While the top-line growth proves strong enterprise demand for generative AI, the $190 billion CapEx plan and impending drop to 64% cloud margins highlight the intense capital friction required to maintain leadership. Investors must carefully monitor whether the revenue from Copilot and AI services scales fast enough to offset the impending wave of hardware depreciation.";
+            }
+        });
+    </script>
+</body>
+</html>
